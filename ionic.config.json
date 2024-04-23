@@ -1,0 +1,8 @@
+{
+  "name": "Wimx Telecom Saldo",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,3 @@
+Key Alias: wimx-key
+Key Store Password: wimx1234
+Key Password: wimx1234

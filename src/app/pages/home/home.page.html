@@ -1,0 +1,76 @@
+<app-header [bkButton]="false"></app-header>
+
+<ion-content fullscreen="true">
+
+    <div style="margin: 60px 0px; text-align: center">
+        <img src="../../../assets/img/logo-2.png" height="160px" alt="">
+    </div>
+
+    <div style="margin: 10px 0px; text-align: center">
+      <app-page-title [title]="title" ></app-page-title>
+    </div>
+    
+    <!--<ion-list>
+      <ion-item *ngFor="let page of pages" [routerLink]="page.redirectTo" detail>
+        <ion-icon slot="start" [name]="page.icon" color="primary"></ion-icon>
+        {{page.name | titlecase}}
+      </ion-item>
+    </ion-list>-->
+
+    <ion-button (click)="openRecarga()" expand="block" color="white">
+      <div class="text_left">
+        <ion-icon slot="start" name="reload-circle"></ion-icon>
+        Recargar plan
+      </div>
+    </ion-button>
+  
+    <ion-button *ngFor="let page of pages" [routerLink]="page.redirectTo" expand="block" color="white">
+      <div class="text_left">
+        <ion-icon slot="start" [name]="page.icon"></ion-icon>
+        {{page.name | titlecase}}
+      </div>
+    </ion-button>
+
+</ion-content>
+
+<app-footer></app-footer>
+
+<style>
+  *{
+    color: #000;
+  }
+
+  ion-button {
+    margin: 0;
+    padding: 8px 0;
+    height: auto;
+    font-size: 17px;
+  }
+
+  .text_left {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .text_left ion-icon {
+    margin-right: 8px;
+    font-size: small;
+  }
+
+  .text_end {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 300;
+    font-size: small;
+  }
+</style>

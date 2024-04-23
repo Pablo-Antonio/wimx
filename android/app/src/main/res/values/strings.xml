@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Wimx Telecom Saldo</string>
+    <string name="title_activity_main">Wimx Telecom Saldo</string>
+    <string name="package_name">io.ionic.wimx.telecom</string>
+    <string name="custom_url_scheme">io.ionic.wimx.telecom</string>
+</resources>
